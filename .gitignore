@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+phase2_outputs.json
+.bedrock_agentcore.yaml
+.bedrock_agentcore/
+fail.json
+deploy.log
+runtime-policy.json
+*.zip
+aws/
+*~

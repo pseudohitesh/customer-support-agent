@@ -1,0 +1,1 @@
++ uv run agentcore invoke --session-id d92d1bb2-baed-49fb-b976-a04f7c80c409 '{"prompt": "Go to https://www.amazon.com and tell me the page title.", "customer_id": "CUST-123"}'

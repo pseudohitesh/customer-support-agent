@@ -1,0 +1,31 @@
++ uv run agentcore invoke --session-id f1f956df-82e5-4488-a8e2-739f60b3fa72 '{"prompt": "I am a Gold member with 4250 points. Calculate my discount on a $150 standard order.", "customer_id": "CUST-123"}'
+┌────────────────────────── customer_support_agent ───────────────────────────┐
+│ Session: f1f956df-82e5-4488-a8e2-739f60b3fa72                               │
+│ Request ID: f9876299-9bfd-4dc2-ad4f-eb6b4a27dc1e                            │
+│ ARN:                                                                        │
+│ arn:aws:bedrock-agentcore:us-east-1:383866091400:runtime/customer_support_a │
+│ gent-umNZ6y5A7I                                                             │
+│ Logs: aws logs tail                                                         │
+│ /aws/bedrock-agentcore/runtimes/customer_support_agent-umNZ6y5A7I-DEFAULT   │
+│ --log-stream-name-prefix "2026/10/10/[runtime-logs]" --follow               │
+│       aws logs tail                                                         │
+│ /aws/bedrock-agentcore/runtimes/customer_support_agent-umNZ6y5A7I-DEFAULT   │
+│ --log-stream-name-prefix "2026/10/10/[runtime-logs]" --since 1h             │
+│ GenAI Dashboard:                                                            │
+│ https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#gen-ai-obse │
+│ rvability/agent-core                                                        │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+Response:
+**Gold member discount breakdown for $150 standard order:**
+
+- **Points redeemed:** 4,000  
+- **Points discount:** $40.00  
+- **Gold tier discount:** $11.00  
+- **Final total:** $99.00  
+- **Total savings:** $51.00  
+- **Loyalty points earned:** 99  
+- **Remaining points:** 250  
+
+Your final charge will be **$99.00**.
++ set +x

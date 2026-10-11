@@ -1,0 +1,33 @@
++ uv run agentcore invoke --session-id 9ca4fd51-e018-465f-8cdb-1c405a6dfc59 '{"prompt": "Hi, I am Jane. I prefer concise responses and I like to be contacted by email.", "customer_id": "CUST-123"}'
+┌────────────────────────── customer_support_agent ───────────────────────────┐
+│ Session: 9ca4fd51-e018-465f-8cdb-1c405a6dfc59                               │
+│ Request ID: 270af4c5-d38a-4d98-ae6b-f53ba95b0327                            │
+│ ARN:                                                                        │
+│ arn:aws:bedrock-agentcore:us-east-1:383866091400:runtime/customer_support_a │
+│ gent-umNZ6y5A7I                                                             │
+│ Logs: aws logs tail                                                         │
+│ /aws/bedrock-agentcore/runtimes/customer_support_agent-umNZ6y5A7I-DEFAULT   │
+│ --log-stream-name-prefix "2026/10/10/[runtime-logs]" --follow               │
+│       aws logs tail                                                         │
+│ /aws/bedrock-agentcore/runtimes/customer_support_agent-umNZ6y5A7I-DEFAULT   │
+│ --log-stream-name-prefix "2026/10/10/[runtime-logs]" --since 1h             │
+│ GenAI Dashboard:                                                            │
+│ https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#gen-ai-obse │
+│ rvability/agent-core                                                        │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+Response:
+Hello Jane! Thanks for reaching out. I’ve noted your preference for concise 
+email communication.
+
+Here’s a quick update on your recent activity:
+
+- **Order ORD‑001 (Wireless Headphones Pro)**: Shipped via UPS, tracking 
+**TRK987654321**, estimated delivery **Oct 12, 2026**.
+- **Order ORD‑002 (Kindle Paperwhite)**:  
+  - Refund **$139.99** issued (**REF‑6VE37C9R**) on Oct 9, processing 3‑5 
+business days.  
+  - Additional refund request **$139.99** submitted Oct 10 (**REF‑D3R3XOLX**).
+
+If you need anything else, just let me know!
++ set +x

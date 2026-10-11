@@ -1,0 +1,31 @@
++ uv run agentcore invoke --session-id f7a34689-a322-47ba-85b3-b01edb3d88e5 '{"prompt": "Do you remember my name and my communication preferences?", "customer_id": "CUST-123"}'
+┌────────────────────────── customer_support_agent ───────────────────────────┐
+│ Session: f7a34689-a322-47ba-85b3-b01edb3d88e5                               │
+│ Request ID: 7197989e-3503-4cc9-b75d-05edbdf71e3a                            │
+│ ARN:                                                                        │
+│ arn:aws:bedrock-agentcore:us-east-1:383866091400:runtime/customer_support_a │
+│ gent-umNZ6y5A7I                                                             │
+│ Logs: aws logs tail                                                         │
+│ /aws/bedrock-agentcore/runtimes/customer_support_agent-umNZ6y5A7I-DEFAULT   │
+│ --log-stream-name-prefix "2026/10/10/[runtime-logs]" --follow               │
+│       aws logs tail                                                         │
+│ /aws/bedrock-agentcore/runtimes/customer_support_agent-umNZ6y5A7I-DEFAULT   │
+│ --log-stream-name-prefix "2026/10/10/[runtime-logs]" --since 1h             │
+│ GenAI Dashboard:                                                            │
+│ https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#gen-ai-obse │
+│ rvability/agent-core                                                        │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+Response:
+Hello Jane,
+
+Yes, I remember you! Based on our records:
+
+**Your name:** Jane  
+**Communication preferences:**  
+- You prefer **concise responses**  
+- You prefer to be contacted **by email**
+
+If you have any questions about your recent orders or need assistance, just let
+me know and I'll be happy to help!
++ set +x

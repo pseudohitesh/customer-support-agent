@@ -1,0 +1,23 @@
++ uv run agentcore invoke --session-id 1e74d1d7-c358-4348-9d9d-c9d23a29ddb8 '{"prompt": "Go to https://www.udacity.com and tell me the page title.", "customer_id": "CUST-123"}'
+┌────────────────────────── customer_support_agent ───────────────────────────┐
+│ Session: 1e74d1d7-c358-4348-9d9d-c9d23a29ddb8                               │
+│ Request ID: bb3bc2ea-2b9b-4559-8116-f9ffb5e0b026                            │
+│ ARN:                                                                        │
+│ arn:aws:bedrock-agentcore:us-east-1:383866091400:runtime/customer_support_a │
+│ gent-umNZ6y5A7I                                                             │
+│ Logs: aws logs tail                                                         │
+│ /aws/bedrock-agentcore/runtimes/customer_support_agent-umNZ6y5A7I-DEFAULT   │
+│ --log-stream-name-prefix "2026/10/10/[runtime-logs]" --follow               │
+│       aws logs tail                                                         │
+│ /aws/bedrock-agentcore/runtimes/customer_support_agent-umNZ6y5A7I-DEFAULT   │
+│ --log-stream-name-prefix "2026/10/10/[runtime-logs]" --since 1h             │
+│ GenAI Dashboard:                                                            │
+│ https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#gen-ai-obse │
+│ rvability/agent-core                                                        │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+Response:
+The page title for https://www.udacity.com is:
+
+**"Learn the Latest Tech Skills; Advance Your Career | Udacity"**
++ set +x

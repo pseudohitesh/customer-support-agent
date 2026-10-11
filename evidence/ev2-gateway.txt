@@ -1,0 +1,28 @@
++ uv run agentcore invoke --session-id bb0ad6fc-260d-4c96-90f2-849a20faefa2 '{"prompt": "Look up order ORD-002, tell me its status and delivery date, and generate a return label for it.", "customer_id": "CUST-123"}'
+┌────────────────────────── customer_support_agent ───────────────────────────┐
+│ Session: bb0ad6fc-260d-4c96-90f2-849a20faefa2                               │
+│ Request ID: d801dba2-0f49-4ec7-a62d-586ce769e2a9                            │
+│ ARN:                                                                        │
+│ arn:aws:bedrock-agentcore:us-east-1:383866091400:runtime/customer_support_a │
+│ gent-umNZ6y5A7I                                                             │
+│ Logs: aws logs tail                                                         │
+│ /aws/bedrock-agentcore/runtimes/customer_support_agent-umNZ6y5A7I-DEFAULT   │
+│ --log-stream-name-prefix "2026/10/10/[runtime-logs]" --follow               │
+│       aws logs tail                                                         │
+│ /aws/bedrock-agentcore/runtimes/customer_support_agent-umNZ6y5A7I-DEFAULT   │
+│ --log-stream-name-prefix "2026/10/10/[runtime-logs]" --since 1h             │
+│ GenAI Dashboard:                                                            │
+│ https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#gen-ai-obse │
+│ rvability/agent-core                                                        │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+Response:
+ORD-002 is **DELIVERED** and was delivered on **October 7, 2026**.
+
+Your return label for ORD-002 has been generated:
+🔗 **Download Return Label**: (https://returns.amazon.com/label/ORD-002)
+🚚 **Carrier**: UPS
+⏳ **Valid Until**: December 31, 2025
+
+You can print this label and ship the Kindle Paperwhite back to us using UPS.
++ set +x
